@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.flexible {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1780px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 30px 0;
+    background-color: black;
+}
+
+.header__warpper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    gap: 56px;
+}
+
+.header__list {
+    list-style-type: none;
+    gap: 44px;
+}
+
+.header__item {
+    padding: 10px 25px;
+}
+
+.header__link {
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    color: white;
+}
+
+.header__right {
+    gap: 70px;
+}
+
+.header__right>div {
+    gap: 8px;
+}
+
+/* .header__right > div > input {
+width: 80px;
+background-image: none;
+outline: none;
+border: none;
+background-color: transparent;
+} */
+
+/* ::placeholder {
+color: white;
+} */
+
+.header__right>.header__search,
+.header__avatar {
+    gap: 8px;
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    color: white;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1120px) {
+    .header__item {
+        padding: 0;
+    }
+
+    .header__right {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .header.active .header__list {
+        display: flex;
+    }
+
+    .header.active .header__warpper {}
+
+    .header__warpper {
+        height: 100;
+    }
+
+    .header.active .header__right {
+        display: block;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 850px) {
+    .header {
+        padding: 20px 0;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__item {
+        padding: 0;
+    }
+}
+
+@media (max-width: 340px) {
+    .header {
+        padding: 15px 0;
+    }
+}
+
+.section-hero {
+    min-height: 100vh;
+    background-image: url("../images/hero-slide.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-wrap {
+    max-width: 520px;
+    width: 100%;
+    padding: 240px 0;
+}
+
+.hero-wrap>h1 {
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 100%;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.hero-wrap>h1>span {
+    font-weight: 700;
+}
+
+.hero-wrap>button {
+    padding: 10px 34px;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    border-radius: 60px;
+    background-color: #E13C52;
+    border: none;
+    color: white;
+}
+
+.footer {
+    padding: 80px 0 40px 0;
+    background-color: #191919;
+}
+.footer-icon {
+    margin-bottom: 100px;
+}
+.footer-text {
+    max-width: 280px;
+    width: 100%;
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    color: #8D8D8D;
+    margin-bottom: 40px;
+}
+.footer-apps {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 20px;
+}
+.footer-apps > a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer-socials {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+.footer-links>a {
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 140%;
+    color: #616161;
+    margin-bottom: 16px;
+}
+
+.footer-copright {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    color: #616161;
+}
