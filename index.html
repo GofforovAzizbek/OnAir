@@ -1,171 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnAir</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinosayt</title>
+  <link href="src/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <!-- Header Start -->
-    <header class="header">
-        <div class="container">
-            <div class="header__warpper">
-                <!-- Navigation Bar -->
-                <nav class="header__nav flexible">
-                    <a href="index.html" class="header__logo">
-                        <img src="images/site-logo.svg" alt="Logo" class="header__icon">
-                    </a>
+<body class="bg-[#191919] font-ubuntu ">
+  <header id="header" class="fixed top-0 left-0 w-full z-50 flex items-center justify-center bg-[#00000094]">
+    <div class="container lg:px-[35px] xl:px-[50px] px-4 py-6 mx-auto max-w-[1900px]">
+      <div id="header-wrapper" class="flex items-center justify-between">
+        <div id="header-navbar-wrapper" class="flex gap-[30px] xl:gap-[61px]">
+          <div id="logo">
+            <a href="#hero">
+              <img src="public/logo.svg" alt="" />
 
-                    <ul class="header__list flexible">
-                        <li class="header__item">
-                            <a href="#" class="header__link">Movies</a>
-                        </li>
-
-                        <li class="header__item">
-                            <a href="#" class="header__link">Series</a>
-                        </li>
-
-                        <li class="header__item">
-                            <a href="#" class="header__link">Channels</a>
-                        </li>
-
-                        <li class="header__item">
-                            <a href="#" class="header__link">Music</a>
-                        </li>
-                    </ul>
-
-                </nav>
-
-                <div class="header__right flexible">
-                    <a href="#" class="header__search flexible">
-                        <img src="images/search-icon.svg" alt="search" class="search__icon">
-                        Search
-                    </a>
-                    <!-- <input type="text" placeholder="Search -->
-
-                    <a href="#" class="header__avatar flexible">
-                        <img src="images/header-avatar.svg" alt="avatar">
-                        Sign in
-                    </a>
-                </div>
-
-                <button class="menu-btn">
-                    ☰
-                </button>
-
-            </div>
+          </div>
+          <nav id="header-navbar" class="justify-center hidden md:flex items- center">
+            <ul
+              class="flex xl:gap-[75px] gap-[45px] items-center justify-center text-[white] xl:text-2xl text-[18px] font-medium font-ubuntu">
+              <li class="cursor-pointer nav-link-hover"> <a href="#films">Movies</a></li>
+              <li class="cursor-pointer nav-link-hover"> <a href="#TV-Series">Series</a></li>
+              <li class="cursor-pointer nav-link-hover"><a href="#Channels"> Channels</a></li>
+              <li class="cursor-pointer nav-link-hover"><a href="#Music">Music </a></li>
+            </ul>
+          </nav>
         </div>
-    </header>
-
-    <!-- Main start -->
-    <main class="main">
-        <section class="section-hero">
-            <div class="container">
-                <div class="hero-wrap">
-                    <h1>Dive into a <span>universe</span> of un-ending content and channels</h1>
-                    <button>Start FREE trial</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Fotter start -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-wrapper">
-                <div class="footer-wrap">
-                    <a href="index.html" class="footer-logo">
-                        <img src="images/onair-logo.svg" alt="Logo" class="footer-icon">
-                    </a>
-
-                    <p class="footer-text">Hot Africa, we offer original, exclusive and premium stories. Everything you want to watch, anytime, anywhere and as much.</p>
-
-                    <div class="footer-contact">
-                        <div class="footer-apps">
-                            <a href="#" class="">
-                                <img src="images/appstore.svg" alt="" class="">
-                            </a>
-
-                            <a href="#" class="">
-                                <img src="images/googleplay.svg" alt="" class="">
-                            </a>
-                        </div>
-                        <div class="footer-socials">
-                            <a href="" class="">
-                                <img src="images/facebook.svg" alt="" class="">
-                            </a>
-                            <a href="" class="">
-                                <img src="images/instagramm.svg" alt="" class="">
-                            </a>
-                            <a href="" class="">
-                                <img src="images/twitter.svg" alt="" class="">
-                            </a>
-                            <a href="" class="">
-                                <img src="images/youtube.svg" alt="" class="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="footer-links">
-                        <a>Terms of use</a>
-                        <a>Privacy Policy</a>
-                        <a>SiteMap</a>
-                    </div>
-                    <p class="footer-copright">
-                       Copyright © 2022 Hot Africa. All rights reserved. 
-                    </p>
-                </div>
-                <div class="footter-wrap">
-
-                </div>
-                <div class="footter-wrap">
-
-                </div>
-                <div class="footter-wrap">
-
-                </div>
-            </div>
+        <div id="header-socials" class="flex xl:gap-[70px] gap-[40px] text-[white]">
+          <div class="md:flex hidden gap-[8px] items-center justify-center cursor-pointer">
+            <img src="/public/search.svg" alt="" />
+            <p class="xl:text-2xl text-[18px] font-semibold nav-link-hover">
+              Search
+            </p>
+          </div>
+          <div class="md:flex hidden gap-[8px] items-center justify-center cursor-pointer">
+            <img src="/public/user.svg" alt="" />
+            <p class="xl:text-2xl text-[18px] font-semibold nav-link-hover">
+              Sign in
+            </p>
+          </div>
         </div>
-    </footer>
-    <script>
-        const menuBtn = document.querySelector(".menu-btn");
-        const header = document.querySelector(".header");
+        <div id="menuBtn" class="menu md:hidden flex flex-col gap-[4px] justify-end cursor-pointer z-50">
+          <span class="line1 w-[39px] h-[5px] bg-white rounded-full"></span>
+          <span class="line2 w-[27px] h-[5px] bg-white rounded-full self-end"></span>
+          <span class="line3 w-[19px] h-[5px] bg-white rounded-full self-end"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="menu-bar"
+    class="fixed w-full h-screen left-0 transition-transform duration-300 ease-in-out -translate-x-full bg-[#0000009c] to-0 lg:hidden flex flex-col pt-[120px] z-30">
+    <div class="container px-[20px] flex flex-col gap-[20px]">
+      <div id="menu-search"
+        class="flex gap-[5px] pl-[12px] py-[12px] pr-[100px] bg-[#232229] rounded-3xl max-w-[320px]">
+        <label for=""><img src="/public/search.svg" alt="" /></label>
+        <input type="search" id="search" name="search" placeholder="Search" class="text-[#4E4C5E]" />
+      </div>
+      <nav id="header-navbar" class="flex items-center">
+        <ul class="flex flex-col gap-[30px] text-[white] xl:text-2xl text-[18px] font-medium font-ubuntu">
+          <li class="cursor-pointer nav-link-hover"><a href="#films">Movies</a></li>
+          <li class="cursor-pointer nav-link-hover"> <a href="#TV-Series">Series</a></li>
+          <li class="cursor-pointer nav-link-hover"><a href="#Channels"> Channels</a></li>
+          <li class="cursor-pointer nav-link-hover"><a href="#Music">Music </a></li>
+        </ul>
+      </nav>
+      <div class="flex gap-[8px] items-center text-[white]">
+        <img src="/public/user.svg" alt="" class="cursor-pointer" />
+        <p class="xl:text-2xl text-[18px] font-semibold cursor-pointer">
+          Sign in
+        </p>
+      </div>
+    </div>
+  </div>
+  <main class="pt-[100px]">
+    <section id="hero" class="relative flex justify-center w-full">
+      <div class="flex flex-col-reverse lg:flex-col w-full max-w-[1925px]">
+        <div class="bg-[#202429] lg:bg-[#20242900] w-full z-10 relative flex justify-center items-center">
+          <div
+            class="container px-4 lg:px-[69px] mx-auto max-w-[1925px] py-[80px] lg:py-[150px] lg:relative lg:z-30 lg:pt-[250px] 2xl:pt-[400px]">
+            <div id="hero-title"
+              class="2xl:max-w-[523px] max-w-[400px] lg:max-w-[350px] mx-auto lg:mx-0 text-center lg:text-left">
+              <h2 class="text-[32px] sm:text-[40px] lg:text-[34px] 2xl:text-[48px] font-light text-white leading-tight">
+                Dive into a <span class="font-bold">universe</span> of
+                un-ending content and channels
+              </h2>
+            </div>
+            <div id="hero-btn" class="flex justify-center mt-6 lg:justify-start">
+              <button class="btn-trial text-2xl px-[34px] py-[10px] rounded-full font-medium cursor-pointer text-[#fff] bg-[#E13C52]">
+                Start FREE trial
+              </button>
+            </div>
+          </div>
+        </div>
 
-        menuBtn.onclick = () => {
+        <div
+          class="w-full lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:h-[600px] 2xl:h-[1091px] lg:max-w-[1925px] lg:bg-[url('public/hero-bg.png')] lg:bg-cover lg:bg-center lg:bg-no-repeat lg:z-0 overflow-hidden relative ">
+          <img src="public/hero-bg.png" alt="Hero Image"
+            class="object-[75%_center] lg:object-cover h-full w-[150%] sm:w-full lg:hidden " />
+        </div>
+      </div>
+    </section>
+    <section id="films" class="flex 2xl:pt-[350px]">
+      <div class="lg:px-[35px] px-4 py-6 mx-auto w-full max-w-[1800px] flex flex-col gap-[35px]">
+        <div id="Movies"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-x-[15px] gap-y-[20px]">
+        </div>
+      </div>
+    </section>
+    <section id="TV-Series" class="flex 2xl:pt-[50px]">
+      <div class="lg:px-[35px] px-4 py-6 mx-auto w-full max-w-[1800px] flex flex-col gap-[35px]">
 
-            header.classList.toggle("active");
+        <div id="Series"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-x-[15px] gap-y-[20px]">
+        </div>
+      </div>
+    </section>
+  </main>
 
-            if (header.classList.contains("active")) {
-                menuBtn.textContent = "✖";
-                document.body.style.overflow = "hidden";
-            } else {
-                menuBtn.textContent = "☰";
-                document.body.style.overflow = "auto";
-            }
+  <footer class="pt-[77px] bg-[#141414] pt-[20px]">
+    <div class="lg:px-[35px] px-4 py-6 mx-auto w-full max-w-[1800px] flex flex-col sm:flex-row justify-between">
+      <div id="column1" class="flex flex-col gap-[35px]">
+        <div id="footer-logo">
+          <a href="#hero">
+            <img src="/public/light-logo.svg" alt="">
+          </a>
+        </div>
+        <div id="footer-desc" class="max-w-[280px] pt-[60px] text-[#8D8D8D]">
+          <p>Hot Africa, we offer original, exclusive and premium stories. Everything you want to watch, anytime,
+            anywhere and as much.</p>
+        </div>
+        <div class="flex gap-[20px]">
+          <a href=""> <img src="/public/appstore.svg" alt=""></a>
+          <a href=""> <img src="/public/googleplay.svg" alt=""></a>
+        </div>
+        <div class="flex gap-[10px]">
 
-        }
-
-        document.addEventListener("click", (e) => {
-
-            if (!header.contains(e.target) && window.innerWidth < 850) {
-                header.classList.remove("active");
-                menuBtn.textContent = "☰";
-                document.body.style.overflow = "auto";
-            }
-
-        });
-    </script>
-
+          <a href=""><img src="/public/facebook.svg" alt=""></a>
+          <a href=""><img src="/public/instagramm.svg" alt=""></a>
+          <a href=""><img src="/public/twitter.svg" alt=""></a>
+          <a href=""><img src="/public/youtube.svg" alt=""></a>
+        </div>
+        <div class="pr-[20px] flex flex-col gap-[20px] text-[#8D8D8D]">
+          <p class="flex gap-[20px]"><span class="cursor-pointer">Terms of use</span> <span class="cursor-pointer">
+              Privacy Policy</span> <span class="cursor-pointer"> SiteMap</span></p>
+          <p>Copyright © 2022 Hot Africa. All rights reserved.</p>
+        </div>
+      </div>
+      <div id="column2" class="grid gird-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-[80px]">
+        <div id="column2-1" class="flex flex-col gap-[25px]">
+          <div class="md:flex hidden gap-[8px] cursor-pointer">
+            <img src="/public/user.svg" alt="" />
+            <p class="xl:text-2xl text-[18px] font-semibold nav-link-hover text-[white]">
+              Sign in
+            </p>
+          </div>
+          <span class="text-[#8D8D8D]">Personal data</span>
+          <span class="text-[#8D8D8D]">Choosing a Plan</span>
+          <span class="text-[#8D8D8D]">Payment</span>
+        </div>
+        <div id="column2-2" class="flex flex-col gap-[25px]">
+          <p class="text-3xl cursor-pointer nav-link-hover text-[white] font-bold"> <a href="#films">Movies</a></p>
+          <span class="text-[#8D8D8D]">Lock Upp</span>
+          <span class="text-[#8D8D8D]">Pavitra Rishta</span>
+          <span class="text-[#8D8D8D]">Girgit</span>
+          <span class="text-[#8D8D8D]">Hai Taubba Season 3</span>
+          <span class="text-[#8D8D8D]">Cartel</span>
+          <span class="text-[#8D8D8D]">Crimes And Confessions</span>
+          <span class="text-[#8D8D8D]">Puncch Beat Season 2</span>
+          <span class="text-[#8D8D8D]">Broken But Beautiful Season 3</span>
+        </div>
+        <div id="column2-3" class="flex flex-col gap-[25px]">
+          <p class="cursor-pointer nav-link-hover text-[white] font-bold text-3xl "> <a href="#TV-Series">Series</a></p>
+          <span class="text-[#8D8D8D]">X.X.X. Season 2</span>
+          <span class="text-[#8D8D8D]">Gandii Baat Season 5</span>
+          <span class="text-[#8D8D8D]">Gandii Baat Season 6</span>
+          <span class="text-[#8D8D8D]">Broken But Beautiful Season 1</span>
+          <span class="text-[#8D8D8D]">Broken But Beautiful Season 2</span>
+          <span class="text-[#8D8D8D]">Class Of 2020</span>
+          <span class="text-[#8D8D8D]">Bekaaboo Season 1</span>
+          <span class="text-[#8D8D8D]">Ragini MMS Returns Season 2</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/index.js"></script>
 </body>
 
 </html>

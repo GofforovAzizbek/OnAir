@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+.menu-open{
+    @apply translate-x-0
+}
+
+
+@layer components {
+  .nav-link-hover {
+    @apply transition-all duration-300 ease-out cursor-pointer hover:text-white;
+    display: inline-block;
+  }
+
+  /* .nav-link-hover:hover {
+
+    transform: translateY(-5px);
+
+
+    text-shadow: 0 12px 8px rgba(225, 60, 82, 0.9);
+  } */
+
+  .btn-trial {
+    @apply transition-all duration-300 ease-in-out border-2 border-[#E13C52] bg-[#E13C52] text-white max-w-[250px] rounded-full cursor-pointer px-[30px];
+  }
+  /* .btn-trial:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: inset 0 8px 12px rgba(225, 60, 82, 0.6),
+            inset 0 -2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+  } */
+}
+
+.channels{
+    @apply flex flex-col gap-[20px] items-center justify-center cursor-pointer cursor-pointer hover:transition-transform hover:-translate-y-1.5
+}
+
+.channels-logo{
+    @apply w-[160px] rounded-full
+}
+
+.channels-title{
+    @apply font-bold text-[white] text-3xl mt-auto
+}
+
+.about-card{
+  @apply relative h-[1000px] w-full rounded-xl overflow-hidden flex items-end p-10 pt-[100px] cursor-pointer
+}
+
+.wrapper{
+@apply absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent
+}
+
+.cardImg{
+@apply object-[75%_center] lg:object-cover h-full w-[150%] sm:w-full lg:hidden
+}
+
+.infoContent{
+  @apply flex justify-between max-w-[450px] items-center gap-[10px]
+}
+
+.no-scroll{
+  @apply h-screen overflow-hidden;
+}
